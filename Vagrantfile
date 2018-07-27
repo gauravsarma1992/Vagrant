@@ -6,10 +6,10 @@ Vagrant.configure("2") do |config|
   config.vm.box = "mayflower/trusty64-puppet3"
 
   # Run setup script to change the kernel version
-  config.vm.provision "shell", path: "setup.sh"
+  #config.vm.provision "shell", path: "setup.sh"
 
   # Run install dependencies script to setup required env 
-  config.vm.provision "shell", path: "install_deps.sh"
+  #config.vm.provision "shell", path: "install_deps.sh"
   
   # Copy required files
   config.vm.provision "file", source: ".vimrc", destination: ".vimrc"
